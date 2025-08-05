@@ -20,6 +20,7 @@ function setup() {
   textAlign(CENTER);
   textSize(20);
   noStroke();
+  document.documentElement.requestFullscreen();
   cursor1 = loadImage('/assets/cursor/astro_arrow.cur');
   cursor(cursor1, pointer.x, pointer.y);
 
@@ -49,6 +50,10 @@ function draw() {
   if (startButton.mouse.presses()) {
     showScreen1();
     screen = 1;
+    if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {
+    let fs = fullscreen();
+    fullscreen(!fs);
+    }
   }
 
   //Screen one objects, skips text, fast pace text (not type writter, next button)
