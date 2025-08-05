@@ -20,7 +20,6 @@ function setup() {
   textAlign(CENTER);
   textSize(20);
   noStroke();
-  document.documentElement.requestFullscreen();
   cursor1 = loadImage('/assets/cursor/astro_arrow.cur');
   cursor(cursor1, pointer.x, pointer.y);
 
