@@ -12,7 +12,7 @@ print(screen);
 
 /* SETUP RUNS ONCE */
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth-300, windowHeight-100);
   textAlign(CENTER);
   textSize(20);
   noStroke();
