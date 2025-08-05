@@ -8,7 +8,6 @@ let a2Button;
 let b1Button;
 let b2Button;
 let screen = 0;
-print(screen);
 
 /* SETUP RUNS ONCE */
 function setup() {
