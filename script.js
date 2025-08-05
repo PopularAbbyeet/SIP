@@ -11,6 +11,7 @@ let counter = 0;
 
 loadFont(
   'fonts.googleapis.com/css2?family=Bytesized'
+  //cursor
 );
 
 
@@ -20,6 +21,7 @@ function setup() {
   textAlign(CENTER);
   textSize(20);
   noStroke();
+  //cursor('image.png', pointer.x, pointer.y);
 
   // Home screen background + text
   background("lightblue");
@@ -62,24 +64,24 @@ function draw() {
 /* FUNCTIONS TO DISPLAY SCREENS */
 function showScreen1() {
   background("palegreen");
-  if (counter === 7) {
+  if (counter = 7) {
       showScreen2();
-    else if (counter === 6) {
+    else if (counter = 6) {
       background("palegreen");
       text("I am the plum queen, and I have a quest for you.", width / 2, height / 2 - 300);
-    else if (counter === 5) {
+    else if (counter = 5) {
       background("palegreen");
       text("Our magical plums have been stolen!", width / 2, height / 2 - 300);
-    else if (counter === 4) {
+    else if (counter = 4) {
       background("palegreen");
       text("I need you, to find all 5 and bring them back to me!", width / 2, height / 2 - 300);
-    else if (counter === 3) {
+    else if (counter = 3) {
       background("palegreen");
       text("Yes? You will? That is great!", width / 2, height / 2 - 300);
-    else if (counter === 2) {
+    else if (counter = 2) {
       background("palegreen");
       text("Just know... The road ahead of you is dangerous.", width / 2, height / 2 - 300);
-    else if (counter === 1) {
+    else if (counter = 1) {
       background("palegreen");
       text("You can pick out 2 of my people to go with you. Choose wisely.", width / 2, height / 2 - 300);
     }
