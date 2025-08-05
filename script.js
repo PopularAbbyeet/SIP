@@ -17,7 +17,7 @@ function setup() {
   // Home screen background + text
   background("lightblue");
   text(
-    "The Plum Adventure",width /2, height /2 - 100);
+    "The Plumtastic Quest",width /2, height /2 - 100);
 
 
   // Create buttons for all screens
