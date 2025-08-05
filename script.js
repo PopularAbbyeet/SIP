@@ -6,22 +6,22 @@ let startButton;
 let nextButton;
 let screen = 0;
 let counter = 0;
-
+let cursor1;
 /* LOAD IMAGES AND OTHER */
 
 loadFont(
   'fonts.googleapis.com/css2?family=Bytesized'
-  //cursor
 );
 
-
+//   
 /* SETUP RUNS ONCE */
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER);
   textSize(20);
   noStroke();
-  //cursor('image.png', pointer.x, pointer.y);
+  cursor1 = loadImage('/assets/cursor/astro_arrow.cur');
+  cursor(cursor1, pointer.x, pointer.y);
 
   // Home screen background + text
   background("lightblue");
