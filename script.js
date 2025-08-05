@@ -8,6 +8,9 @@ let a2Button;
 let b1Button;
 let b2Button;
 let screen = 0;
+let i = 0;
+let txt = 'Lorem ipsum typing effect!'; /* The text */
+let speed = 50; /* The speed/duration of the effect in milliseconds */
 
 /* SETUP RUNS ONCE */
 function setup() {
@@ -18,6 +21,11 @@ function setup() {
 
   // Home screen background + text
   background("lightblue");
+  if (i < txt.length) {
+    document.getElementById("typewriter").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
   text(
     "The Plum Adventure",width / 2, height / 2 - 100);
 
@@ -108,6 +116,15 @@ if (a1Button.mouse.presses()) {
   showScreen5();
   screen = 5;
 }
+
+
+Typewriter:
+
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 
 
 */
