@@ -8,9 +8,9 @@ let a2Button;
 let b1Button;
 let b2Button;
 let screen = 0;
-let i = 0;
-let txt = 'Lorem ipsum typing effect!'; /* The text */
-let speed = 50; /* The speed/duration of the effect in milliseconds */
+var i = 0;
+var txt = 'Lorem ipsum typing effect!'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 /* SETUP RUNS ONCE */
 function setup() {
