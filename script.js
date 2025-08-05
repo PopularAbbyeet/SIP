@@ -3,12 +3,9 @@
 
 /* VARIABLES */
 let startButton;
-let a1Button;
-let a2Button;
-let b1Button;
-let b2Button;
+let nextButton;
 let screen = 0;
-
+let counter=0;
 
 /* SETUP RUNS ONCE */
 function setup() {
@@ -20,17 +17,14 @@ function setup() {
   // Home screen background + text
   background("lightblue");
   text(
-    "The Plum Adventure",width / 2, height / 2 - 100);
+    "The Plum Adventure",width /2, height /2 - 100);
 
 
   // Create buttons for all screens
-  startButton = new Sprite(width / 2, height / 2 + 100);
+  startButton = new Sprite(width/2, height /2 + 150);
 
   // Start hidden/off-screen buttons
-  a1Button = new Sprite(-100, -100);
-  a2Button = new Sprite(-100, -100);
-  b1Button = new Sprite(-100, -100);
-  b2Button = new Sprite(-100, -100);
+  nextButton = new Sprite(-100, -100);
 }
 
 /* DRAW LOOP REPEATS */
@@ -50,29 +44,46 @@ function draw() {
 
   //Screen one objects, skips text, fast pace text (not type writter, next button)
   if (screen === 1) {
-    a1Button.w = 50;
-    a1Button.h = 50;
-    a1Button.collider = "k";
-    a1Button.color = "plum";
-    a1Button.text = "Yes";
-
-    a2Button.w = 50;
-    a2Button.h = 50;
-    a2Button.collider = "k";
-    a2Button.color = "plum";
-    a2Button.text = "No";
+    nextButton.w = 50;
+    nextButton.h = 50;
+    nextButton.collider = "k";
+    nextButton.color = "plum";
+    nextButton.text = "Yes";
   }  
 }
 
 /* FUNCTIONS TO DISPLAY SCREENS */
 function showScreen1() {
-  background("palegreen");
-  text("Plum queen diaglue", width / 2, height / 2 - 100);
+  if (nextButton.mouse.presses()) {
+    counter++:
+    if (counter === 7) {
+      showScreen2();
+    else if (counter === 6) {
+      background("palegreen");
+      text("I am the plum queen, and I have a quest for you.", width / 2, height / 2 - 300);
+    else if (counter === 5) {
+      background("palegreen");
+      text("Our magical plums have been stolen!", width / 2, height / 2 - 300);
+    else if (counter === 4) {
+      background("palegreen");
+      text("I need you, to find all 5 and bring them back to me!", width / 2, height / 2 - 300);
+    else if (counter === 3) {
+      background("palegreen");
+      text("Yes? You will? That is great!", width / 2, height / 2 - 300);
+    else if (counter === 2) {
+      background("palegreen");
+      text("Just know... The road ahead of you is dangerous.", width / 2, height / 2 - 300);
+    else if (counter === 1) {
+      background("palegreen");
+      text("You can pick out 2 of my people to go with you. Choose wisely.", width / 2, height / 2 - 300);
+    }
+  }
+  
+
 
   startButton.pos = { x: -100, y: -100 };
 
-  a1Button.pos = { x: width / 2 - 50, y: height / 2 + 100 };
-  a2Button.pos = { x: width / 2 + 50, y: height / 2 + 100 };
+  nextButton.pos = { x: width / 2 - 50, y: height / 2 + 100 };
 }
 
 
