@@ -64,36 +64,11 @@ function draw() {
 /* FUNCTIONS TO DISPLAY SCREENS */
 function showScreen1() {
   background("palegreen");
-  if (counter = 7) {
-      showScreen2();
-    else if (counter = 6) {
-      background("palegreen");
-      text("I am the plum queen, and I have a quest for you.", width / 2, height / 2 - 300);
-    else if (counter = 5) {
-      background("palegreen");
-      text("Our magical plums have been stolen!", width / 2, height / 2 - 300);
-    else if (counter = 4) {
-      background("palegreen");
-      text("I need you, to find all 5 and bring them back to me!", width / 2, height / 2 - 300);
-    else if (counter = 3) {
-      background("palegreen");
-      text("Yes? You will? That is great!", width / 2, height / 2 - 300);
-    else if (counter = 2) {
-      background("palegreen");
-      text("Just know... The road ahead of you is dangerous.", width / 2, height / 2 - 300);
-    else if (counter = 1) {
-      background("palegreen");
-      text("You can pick out 2 of my people to go with you. Choose wisely.", width / 2, height / 2 - 300);
-    }
-  if (nextButton.mouse.presses()) {
-    counter++:
-  }
 
   
 
 
   startButton.pos = { x: -100, y: -100 };
-
   nextButton.pos = { x: width / 2 - 50, y: height / 2 + 100 };
 }
 
