@@ -68,11 +68,6 @@ function draw() {
 
 /* FUNCTIONS TO DISPLAY SCREENS */
 function showScreen1() {
-  background("palegreen");
-
-  
-
-
   startButton.pos = { x: -100, y: -100 };
   nextButton.pos = { x: width / 2 - 50, y: height / 2 + 100 };
 }
