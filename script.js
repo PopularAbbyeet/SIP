@@ -7,6 +7,13 @@ let nextButton;
 let screen = 0;
 let counter = 0;
 
+/* LOAD IMAGES AND OTHER */
+
+loadFont(
+  'fonts.googleapis.com/css2?family=Bytesized'
+);
+
+
 /* SETUP RUNS ONCE */
 function setup() {
   createCanvas(windowWidth, windowHeight);
