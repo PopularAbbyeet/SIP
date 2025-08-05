@@ -2,11 +2,11 @@
 //See the README file for more information
 
 /* VARIABLES */
+let cursor1;
 let startButton;
 let nextButton;
 let screen = 0;
 let counter = 0;
-let cursor1;
 /* LOAD IMAGES AND OTHER */
 
 loadFont(
@@ -20,8 +20,8 @@ function setup() {
   textAlign(CENTER);
   textSize(20);
   noStroke();
-  cursor1 = loadImage('/assets/cursor/astro_arrow.cur');
-  cursor(cursor1, pointer.x, pointer.y);
+  //cursor1 = loadImage('/assets/cursor/astro_arrow.cur');
+  //cursor(cursor1, pointer.x, pointer.y);
 
   // Home screen background + text
   background("lightblue");
@@ -54,19 +54,19 @@ function draw() {
     fullscreen(!fs);
     }
   }
-
   //Screen one objects, skips text, fast pace text (not type writter, next button)
   if (screen === 1) {
     nextButton.w = 50;
     nextButton.h = 50;
     nextButton.collider = "k";
     nextButton.color = "plum";
-    nextButton.text = "Yes";
+    nextButton.text = "Work";
   }  
 }
-
 /* FUNCTIONS TO DISPLAY SCREENS */
 function showScreen1() {
+  background("palegreen");
+  text("Screen 1 work", width / 2, height / 2 - 100);
   startButton.pos = { x: -100, y: -100 };
   nextButton.pos = { x: width / 2 - 50, y: height / 2 + 100 };
 }
