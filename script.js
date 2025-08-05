@@ -12,7 +12,7 @@ let screen = 0;
 
 /* SETUP RUNS ONCE */
 function setup() {
-  createCanvas(2500, 1000);
+  createCanvas(windowWidth, windowHeight);
   textAlign(CENTER);
   textSize(20);
   noStroke();
