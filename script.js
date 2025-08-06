@@ -3,15 +3,16 @@
 
 /* VARIABLES */
 let cursor1;
+let font;
 let startButton;
 let nextButton;
 let screen = 0;
 let counter = 0;
 /* LOAD IMAGES AND OTHER */
 
-loadFont(
-  'fonts.googleapis.com/css2?family=Bytesized'
-);
+function preload(){
+  font = loadFont("assets/Bytesized-Regular.ttf");
+}
 
 //   
 /* SETUP RUNS ONCE */
@@ -20,7 +21,7 @@ function setup() {
   textAlign(CENTER);
   textSize(20);
   fill(255, 0, 0);
-  textFont("Bytesized")
+  textFont(font);
   noStroke();
   //cursor1 = loadImage('/assets/cursor/astro_arrow.cur');
   //cursor(cursor1, pointer.x, pointer.y);
