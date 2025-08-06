@@ -19,6 +19,8 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER);
   textSize(20);
+  fill(255, 0, 0);
+  textFont("Bytesized")
   noStroke();
   //cursor1 = loadImage('/assets/cursor/astro_arrow.cur');
   //cursor(cursor1, pointer.x, pointer.y);
