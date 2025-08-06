@@ -4,6 +4,7 @@
 /* VARIABLES */
 let cursor1;
 let font;
+let size =100;
 let startButton;
 let nextButton;
 let screen = 0;
@@ -19,7 +20,7 @@ function preload(){
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER);
-  textSize(50);
+  textSize(size);
   fill(0);
   textFont(font);
   noStroke();
@@ -63,6 +64,7 @@ function draw() {
     nextButton.h = 50;
     nextButton.collider = "k";
     nextButton.color = "plum";
+    size = 50;
     nextButton.text = "Work";
   }  
 }
