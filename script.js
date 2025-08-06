@@ -19,8 +19,8 @@ function preload(){
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER);
-  textSize(20);
-  fill(255, 0, 0);
+  textSize(50);
+  fill(0);
   textFont(font);
   noStroke();
   //cursor1 = loadImage('/assets/cursor/astro_arrow.cur');
