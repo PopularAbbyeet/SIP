@@ -71,9 +71,13 @@ function draw() {
 /* FUNCTIONS TO DISPLAY SCREENS */
 function showScreen1() {
   background("palegreen");
-  text("Screen 1 work", width / 2, height / 2 - 100);
+  text("I am the plum queen, and our plums have been stolen!", width / 2, height / 2 - 100);
+  delayTime(2)
+  background("palegreen");
+  text("I need you to gather them!", width / 2, height / 2 - 100);
+  
   startButton.pos = { x: -100, y: -100 };
-  nextButton.pos = { x: width / 2 - 50, y: height / 2 + 100 };
+  nextButton.pos = { x: width / 2 - 50, y: height / 2 + 200 };
 }
 
 
