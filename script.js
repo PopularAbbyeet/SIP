@@ -4,7 +4,6 @@
 /* VARIABLES */
 let cursor1;
 let font;
-let size =100;
 let startButton;
 let nextButton;
 let screen = 0;
@@ -20,7 +19,7 @@ function preload(){
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER);
-  textSize(size);
+  textSize(80);
   fill(0);
   textFont(font);
   noStroke();
@@ -71,6 +70,7 @@ function draw() {
 /* FUNCTIONS TO DISPLAY SCREENS */
 function showScreen1() {
   background("palegreen");
+  textSize(30);
   text("I am the plum queen, and our plums have been stolen!", width / 2, height / 2 - 100);
   delayTime(2)
   background("palegreen");
